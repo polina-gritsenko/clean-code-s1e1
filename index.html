@@ -1,25 +1,23 @@
 <!DOCTYPE html>
 <html>
+
   <head>
     <title>Todo App</title>
-    <link
-      href="https://fonts.googleapis.com/css?family=Lato:300,400,700"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" media="screen" charset="utf-8" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700"
+          rel="stylesheet" />
+    <link rel="stylesheet"
+          href="style.css"
+          media="screen"
+          charset="utf-8" />
   </head>
 
   <body>
     <header class="header">
-      <img
-        alt="Logo image: Eisenhower matrix"
-        src="./eisenhower-matrix.jpg"
-        class="header__logo"
-      />
-      <a
-        href="https://goal-life.com/page/method/matrix-eisenhower"
-        class="header__more-info"
-      >
+      <img alt="Logo image: Eisenhower matrix"
+           src="./eisenhower-matrix.jpg"
+           class="header__logo" />
+      <a href="https://goal-life.com/page/method/matrix-eisenhower"
+         class="header__more-info">
         Want more details?
       </a>
     </header>
@@ -27,7 +25,9 @@
       <section id="topSectionForAddingElementToList">
         <h3>Add Item</h3>
         <div class="main__task-row-wrapper">
-          <input id="new-task" class="row" type="text" />
+          <input id="new-task"
+                 class="row"
+                 type="text" />
           <button>Add</button>
         </div>
       </section>
@@ -37,19 +37,24 @@
           <li>
             <input type="checkbox" />
             <label class="row">Pay Bills</label>
-            <input type="text" class="row" />
+            <input type="text"
+                   class="row" />
             <button class="button_edit">Edit</button>
             <button class="button_delete">
-              <img alt="Remove button" src="./remove.svg" />
+              <img alt="Remove button"
+                   src="./remove.svg" />
             </button>
           </li>
           <li class="editMode">
             <input type="checkbox" />
             <label class="row">Go Shopping</label>
-            <input type="text" value="Go Shopping" class="row" />
+            <input type="text"
+                   value="Go Shopping"
+                   class="row" />
             <button class="button_edit">Save</button>
             <button class="button_delete">
-              <img alt="Remove button" src="./remove.svg" />
+              <img alt="Remove button"
+                   src="./remove.svg" />
             </button>
           </li>
         </ul>
@@ -58,12 +63,15 @@
         <h3>Completed</h3>
         <ul id="completed-tasks">
           <li>
-            <input type="checkbox" checked />
+            <input type="checkbox"
+                   checked />
             <label class="row">See the Doctor</label>
-            <input type="text" class="row" />
+            <input type="text"
+                   class="row" />
             <button class="button_edit">Edit</button>
             <button class="button_delete">
-              <img alt="Remove button" src="./remove.svg" />
+              <img alt="Remove button"
+                   src="./remove.svg" />
             </button>
           </li>
         </ul>
@@ -71,4 +79,5 @@
     </main>
     <script src="app.js"></script>
   </body>
+
 </html>
