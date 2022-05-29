@@ -11,7 +11,7 @@
           charset="utf-8" />
   </head>
 
-  <body>
+  <body class="main-wrapper">
     <header class="header">
       <img alt="Logo image: Eisenhower matrix"
            src="./eisenhower-matrix.jpg"
@@ -23,54 +23,62 @@
     </header>
     <main class="main">
       <section id="topSectionForAddingElementToList">
-        <h3>Add Item</h3>
-        <div class="main__row-wrapper">
+        <h3 class="section__header">Add Item</h3>
+        <div class="main__single-row-wrapper">
           <input id="new-task"
-                 class="row"
+                 class="row text-input"
                  type="text" />
-          <button>Add</button>
+          <button class="button">Add</button>
         </div>
       </section>
       <section>
-        <h3>Todo</h3>
-        <ul id="incompleteTasks">
-          <li>
-            <input type="checkbox" />
-            <label class="row">Pay Bills</label>
+        <h3 class="section__header">Todo</h3>
+        <ul id="incompleteTasks"
+            class="list">
+          <li class="list__item">
+            <input type="checkbox"
+                   class="checkbox" />
+            <label class="row label">Pay Bills</label>
             <input type="text"
-                   class="row" />
-            <button class="main__button_edit">Edit</button>
-            <button class="main__button_delete">
+                   class="row text-input" />
+            <button class="button main__button_edit">Edit</button>
+            <button class="button main__button_delete">
               <img alt="Remove button"
+                   class="main__button-image"
                    src="./remove.svg" />
             </button>
           </li>
-          <li class="editMode">
-            <input type="checkbox" />
-            <label class="row">Go Shopping</label>
+          <li class="editMode list__item">
+            <input type="checkbox"
+                   class="checkbox" />
+            <label class="row label">Go Shopping</label>
             <input type="text"
                    value="Go Shopping"
-                   class="row" />
-            <button class="main__button_edit">Save</button>
-            <button class="main__button_delete">
+                   class="row text-input" />
+            <button class="button main__button_edit">Save</button>
+            <button class="button main__button_delete">
               <img alt="Remove button"
+                   class="main__button-image"
                    src="./remove.svg" />
             </button>
           </li>
         </ul>
       </section>
       <section>
-        <h3>Completed</h3>
-        <ul id="completed-tasks">
-          <li>
+        <h3 class="section__header">Completed</h3>
+        <ul id="completed-tasks"
+            class="list">
+          <li class="list__item">
             <input type="checkbox"
+                   class="checkbox"
                    checked />
-            <label class="row">See the Doctor</label>
+            <label class="row label">See the Doctor</label>
             <input type="text"
-                   class="row" />
-            <button class="main__button_edit">Edit</button>
-            <button class="main__button_delete">
+                   class="row text-input" />
+            <button class="button main__button_edit">Edit</button>
+            <button class="button main__button_delete">
               <img alt="Remove button"
+                   class="main__button-image"
                    src="./remove.svg" />
             </button>
           </li>
